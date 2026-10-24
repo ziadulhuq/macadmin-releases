@@ -10,26 +10,27 @@ details, with update checks.
 
 This repository only hosts the programs; the source code isn't published.
 
-## Download
+## Install
 
-Open the [latest release](../../releases/latest) and pick the zip for your computer under **Assets**:
-
-- `macadmin-<version>-macos-arm64.zip`
-- `winadmin-<version>-windows-x86_64.zip`
-
-Each zip holds the program and a `README.txt` with the install steps. GitHub shows each file's SHA-256 next to it.
-The programs aren't code-signed, so macOS (Gatekeeper) and Windows (SmartScreen) ask once before the first start;
-the README explains what to click.
-
-## macadmin quick start
+**macOS** (Homebrew):
 
 ```bash
-cd ~/Downloads/macadmin-<version>-macos-arm64
-./macadmin init      # checks, settings (models folder, internet access), security
-./macadmin           # the app; last tab = Settings, q = quit
-./macadmin update    # newer version? shows the changes and asks before downloading
+brew install ziadulhuq/tap/macadmin
+macadmin init        # once: checks, settings (models folder, internet access), security
+macadmin             # the app; last tab = Settings, q = quit
+brew upgrade macadmin    # update (or: macadmin update)
+brew uninstall macadmin  # remove
 ```
+
+Without Homebrew: download `macadmin-<version>.aarch64.tar.gz` from the
+[latest release](../../releases/latest); its `README.txt` has the steps.
+
+**Windows**: download `winadmin-<version>.x86_64.msi` from the [latest release](../../releases/latest)
+and open it, then run `winadmin init` once. Uninstall from Settings > Apps.
+
+GitHub shows each file's SHA-256 next to it. The programs aren't code-signed, so Windows (SmartScreen)
+asks once before the first start, and so does macOS when you install without Homebrew.
 
 ## Versions
 
-Versions are the build date and a build id, for example `2026.10.22-908c835`. Every release lists its changes.
+`v1.0.0` → `v1.0.1` for fixes, `v1.0.1` → `v1.1.0` when features are added. Every release lists its changes.
