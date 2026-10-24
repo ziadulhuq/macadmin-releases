@@ -22,11 +22,13 @@ brew upgrade macadmin    # update (or: macadmin update)
 brew uninstall macadmin  # remove
 ```
 
-Without Homebrew: download `macadmin-<version>.aarch64.tar.gz` from the
-[latest release](../../releases/latest); its `README.txt` has the steps.
+Without Homebrew: download `macadmin-<version>.aarch64.tar.gz` from the newest
+[release](../../releases) that has one; its `README.txt` has the steps.
 
-**Windows**: download `winadmin-<version>.x86_64.msi` from the [latest release](../../releases/latest)
-and open it, then run `winadmin init` once. Uninstall from Settings > Apps.
+**Windows**: download `winadmin-<version>.x86_64.msi` from the newest [release](../../releases)
+that has one and open it, then run `winadmin init` once. Uninstall from Settings > Apps.
+
+A release can hold only the macOS or only the Windows file, when only that program changed.
 
 GitHub shows each file's SHA-256 next to it. The programs aren't code-signed, so Windows (SmartScreen)
 asks once before the first start, and so does macOS when you install without Homebrew.
