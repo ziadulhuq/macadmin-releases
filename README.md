@@ -3,6 +3,8 @@
 Desktop apps (with a terminal mode) that list a computer's apps, services, packages, local AI models,
 network and system details, with update checks.
 
+**Latest: [v1.2.0](../../releases/tag/v1.2.0)**
+
 | | Program | Runs on |
 |---|---|---|
 | 🍎 | **macadmin** | macOS 27 or newer, Apple Silicon (arm64) |
@@ -35,4 +37,5 @@ asks once before the first start, and so does macOS when you install without Hom
 
 ## Versions
 
-`v1.0.0` → `v1.0.1` for fixes, `v1.0.1` → `v1.1.0` when features are added. Every release lists its changes.
+The last digit goes up for fixes (1.2.0 → 1.2.1), the middle one when features are added (1.2.1 → 1.3.0).
+Every release lists its changes.
