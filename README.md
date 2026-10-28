@@ -1,7 +1,7 @@
 # macadmin / winadmin downloads
 
-Terminal apps that list a computer's apps, services, packages, local AI models, network and system
-details, with update checks.
+Desktop apps (with a terminal mode) that list a computer's apps, services, packages, local AI models,
+network and system details, with update checks.
 
 | | Program | Runs on |
 |---|---|---|
@@ -17,7 +17,7 @@ This repository only hosts the programs; the source code isn't published.
 ```bash
 brew install ziadulhuq/tap/macadmin
 macadmin init        # once: checks, settings (models folder, internet access), security
-macadmin             # the app; last tab = Settings, q = quit
+macadmin             # the window; macadmin --tui for the terminal app
 brew upgrade macadmin    # update (or: macadmin update)
 brew uninstall macadmin  # remove
 ```
