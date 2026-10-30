@@ -3,7 +3,7 @@
 Desktop apps (with a terminal mode) that list a computer's apps, services, packages, local AI models,
 network and system details, with update checks.
 
-**Latest: [v1.2.0](../../releases/tag/v1.2.0)**
+**Latest: [v1.3.0](../../releases/tag/v1.3.0)**
 
 | | Program | Runs on |
 |---|---|---|
@@ -18,8 +18,8 @@ This repository only hosts the programs; the source code isn't published.
 
 ```bash
 brew install ziadulhuq/tap/macadmin
-macadmin init        # once: checks, settings (models folder, internet access), security
-macadmin             # the window; macadmin --tui for the terminal app
+macadmin init        # once: checks, settings, security; adds macadmin.app for Spotlight / Alfred / Finder
+macadmin             # the terminal app; macadmin --gui (or macadmin.app) for the window
 brew upgrade macadmin    # update (or: macadmin update)
 brew uninstall macadmin  # remove
 ```
@@ -28,7 +28,9 @@ Without Homebrew: download `macadmin-<version>.aarch64.tar.gz` from the newest
 [release](../../releases) that has one; its `README.txt` has the steps.
 
 **Windows**: download `winadmin-<version>.x86_64.msi` from the newest [release](../../releases)
-that has one and open it, then run `winadmin init` once. Uninstall from Settings > Apps.
+that has one and open it, then run `winadmin init` once. The Start menu opens the window;
+`winadmin` typed in a terminal opens the terminal app (`--gui` / `--tui` choose). The user guide
+(`winadmin-guide.pdf`) is next to the installer and in the Start menu. Uninstall from Settings > Apps.
 
 A release can hold only the macOS or only the Windows file, when only that program changed.
 
